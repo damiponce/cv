@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage[spanish]{babel}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{lipsum}
+\usepackage{tgschola}
+\usepackage[T1]{fontenc}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\definecolor{modcolour}{gray}{0.6}
+
+\hypersetup{
+   colorlinks=true,
+   linkcolor=black,
+   urlcolor=blue,
+}
+\urlstyle{same}
+\renewcommand{\contentsname}{Índice}
+\setlength{\parskip}{0.5em}
+
+\pagestyle{fancy}
+
+\title{Curriculum Vitae}
+\author{Damián Ariel Ponce}
+
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{}
+% Se actualiza solo yay :D
+\rfoot{\color{modcolour} Última actualización: \today}
+
+\begin{document}
+
+   \noindent
+   \begin{tabular}[t]{@{}l} 
+     +54 9 11 3429 0789\\
+   dami.ponce8@gmail.com\\
+   Morón, Buenos Aires
+   \end{tabular}
+   \hfill% move it to the right
+   \begin{tabular}[t]{l@{}} 
+      \multirow{3}{*}{\textbf{\huge Damián Ariel Ponce}}
+   \end{tabular}
+   
+   % MAYBE REMOVE \noindent
+   \noindent\hrulefill
+
+   %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   \vspace{0.5\baselineskip}\noindent
+   \renewcommand{\arraystretch}{1}%
+   \begin{tabular}[t]{@{}p{1.15in} @{}p{5.35in}}
+   
+   %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   {\scshape Educación}
+   &
+   \textbf{Universidad Tecnológica Nacional (FRH)}  \hfill Haedo, Bs.As.\vspace{0.015in} \\ &
+   Ingeniería Aeronáutica -- 1er año \hfill Abril 2021 -- Ahora\vspace{0.015in}
+   \vspace{0.5\baselineskip}
+   \\
+   & \textbf{I.N.A.C. C.I.A.T.A.}  \hfill Morón, Bs.As.\vspace{0.015in} \\ &
+   Técnico Aviónico \hfill 2014 -- 2020\vspace{0.015in}
+   \\
+   \vspace{0.5\baselineskip}
+   \\
+      
+   %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   {\scshape Experiencias}
+   &
+   \textbf{NASA Space Apps Challenge 2019}  \hfill Morón, Bs.As.\vspace{0.015in} \\ 
+   {\scshape Académicas} % ???????????
+   & Nominación global del proyecto\hfill Octubre 2019\vspace{0.015in}
+   \vspace{0.5\baselineskip}
+   \\
+   & \textbf{Olimpiada Nacional ONIET N$^{\circ}$23}  \hfill Córdoba, Cba.\vspace{0.015in} \\ &
+   4to puesto en la competencia grupal de Electrónica \hfill Octubre 2018\vspace{0.015in}
+   \\
+   \vspace{0.5\baselineskip}
+   \\
+
+   %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+   {\scshape Habilidades}
+   &
+   \textbf{Software: }  Microsoft Office (Word, Excel, Powerpoint), Photoshop, Illustrator, Lightroom, AutoCAD, VS Code.
+   \vspace{0.5\baselineskip}
+   \\
+   &
+   \textbf{Lenguajes de programación:} JavaScript, TypeScript, React, React Native, LaTeX, Python.
+   \vspace{0.5\baselineskip}
+   \\
+   &
+   \textbf{Aplicaciones:} Desarrollo web (front-end), diseño gráfico, edición de imagenes, documentación y formateo de texto.
+   \\
+   \vspace{0.5\baselineskip}
+   \\
+
+
+   \end{tabular}
+
+\end{document}
