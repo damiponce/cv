@@ -2,7 +2,14 @@
 \usepackage[spanish]{babel}
 \usepackage{float}
 \usepackage{graphicx}
-\usepackage[margin=1in]{geometry}
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ left=20mm,
+ top=15mm,
+ right=20mm,
+ bottom=15mm
+ }
 \usepackage{hyperref}
 \usepackage{lipsum}
 \usepackage{tgschola}
@@ -11,8 +18,9 @@
 \usepackage{amsmath}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
+\usepackage{fontawesome}
 \definecolor{modcolour}{gray}{0.6}
-
+\usepackage[none]{hyphenat}
 \hypersetup{
    colorlinks=true,
    linkcolor=black,
@@ -35,19 +43,34 @@
 \begin{document}
 
    \noindent
-   \begin{tabular}[t]{@{}l} 
-     +54 9 11 3429 0789\\
-   dami.ponce8@gmail.com\\
-   Morón, Buenos Aires\\
-   28 de Diciembre del 2001
+   \begin{tabular}[t]{l@{}} 
+     \hspace{-2mm}\multirow{4}{*}{\includegraphics[height=4.5cm]{headshot.jpeg}}
+   \end{tabular}\hspace{.3cm}
+   \begin{tabular}[t]{@{}c @{  }l} 
+   \faMapMarker & ~Morón, Buenos Aires\\[.2cm]
+   \faPhone & ~+54 9 11 3429 0789\\[.2cm]
+   \faEnvelope & ~\href{mailto:dami.ponce8@gmail.com}{dami.ponce8@gmail.com}\\[.2cm]
+   \faLinkedin & ~\href{https://www.linkedin.com/in/damianponce/}{linkedin.com/in/damianponce}\\[.2cm]
+   \faGlobe & ~\href{https://damiponce.github.io/}{damiponce.co}\\[.2cm]
+   \faBirthdayCake & ~20 años\\
+
+   \\
    \end{tabular}
    \hfill% move it to the right
-   \begin{tabular}[t]{l@{}} 
-      \multirow{4}{*}{\textbf{\huge Damián Ariel Ponce}}
+   \hspace{-2.5cm}
+   \begin{tabular}[t]{r@{}} 
+   \\[.2cm]
+   \\[.2cm]
+   \\[.2cm]
+   \\
+   \\
+   \\
+   \textbf{\Huge Damián Ariel Ponce}\\
+      
    \end{tabular}
    
    % MAYBE REMOVE \noindent
-   \noindent\hrulefill
+   {\noindent\hrulefill\hspace{-30mm}}
 
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \vspace{0.5\baselineskip}\noindent
@@ -58,39 +81,71 @@
    {\scshape Educación}
    &
    \textbf{Universidad Tecnológica Nacional (FRH)}  \hfill Haedo, Bs.As.\vspace{0.015in} \\ &
-   Ingeniería Electrónica -- 2do año \hfill 2021 -- Ahora\vspace{0.015in}
-   \vspace{0.5\baselineskip}
+   Ingeniería Aeronáutica -- 2do año \hfill 2021 -- Actualidad\vspace{0.015in}
+   \vspace{0.7\baselineskip}
    \\
    & \textbf{I.N.A.C. C.I.A.T.A.}  \hfill Morón, Bs.As.\vspace{0.015in} \\ &
-   Técnico Aviónico \hfill 2014 -- 2020\vspace{0.015in}
+   Secundario completo -- Técnico Aviónico \hfill 2014 -- 2020\vspace{0.015in}
    \\
-   \vspace{1\baselineskip}
+   &
+   \vspace{.3\baselineskip}
+   {\noindent\hspace{-50mm}\hrulefill}
+   \vspace{.7\baselineskip}
    \\
       
    
 
  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   {\scshape Página web}
+   {\scshape Proyectos}
    &
-   \href{https://damiponce.co}{damiponce.co}
+   \textbf{Estadísticas de WhatsApp} \href{https://damiponce.github.io/chat-analyser/}{\small(link)}
    \\
-   {\scshape (proyectos)}
+   %{\scshape (página web)}
    &
+   Herramienta de análisis de datos para chats de Whatsapp.
+   \vspace{0.7\baselineskip}
    \\
-   \vspace{1\baselineskip}
+   & \textbf{Portfolio web} \href{https://damiponce.github.io/}{\small(link)}
+   \\
+   & Una página donde muestro mis proyectos de manera detallada.
+   \vspace{0.7\baselineskip}
+   \\
+   & \textbf{Animaciones 3D de ruido Perlin} \href{https://damiponce.github.io/3d-noise/}{\small(link)}
+   \\
+   & Demostración visual de renderizado 3D a tiempo real en el buscador.
+   \vspace{0.7\baselineskip}
+   \\
+   & \textbf{Visualización del clima} \href{https://damiponce.github.io/weather-web/}{\small(link)}
+   \\
+   & Muestra interactiva de datos meteorológicos de una API open-source.
+   \\
+   &
+   \vspace{.3\baselineskip}
+   {\noindent\hspace{-50mm}\hrulefill}
+   \vspace{.7\baselineskip}
    \\
 
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%
    {\scshape Habilidades}
    &
-   \textbf{Lenguajes de programación: }  JavaScript, TypeScript, Node.js, React, React Native.%, LaTeX, Python.
-   \\
-   \vspace{0.5\baselineskip}
+   \textbf{Lenguajes de programación: }  HTML, CSS, SASS, JavaScript, TypeScript, Python.%, LaTeX, Python.
+   \vspace{0.7\baselineskip}
    \\
    &
-   \textbf{Aplicaciones: }  Desarrollo web (front-end), diseño gráfico, edición de imagenes y documentación.%, dibujo CAD 2D/3D y formateo de texto.
+   \textbf{Frameworks de programación: }  Node.js, React, React Native.%, LaTeX, Python.
+   \vspace{0.7\baselineskip}
    \\
-   \vspace{0.5\baselineskip}
+   &
+   \textbf{Herramientas: }  Git, GitHub, Postman, Photoshop, Illustrator, Figma.%, LaTeX, Python.
+   \\ 
+   %\vspace{0.5\baselineskip}
+   %&
+   %\textbf{Aplicaciones: }  Desarrollo web (front-end), diseño gráfico, edición de %imagenes y documentación.%, dibujo CAD 2D/3D y formateo de texto.
+   %\\
+   &
+   \vspace{.3\baselineskip}
+   {\noindent\hspace{-50mm}\hrulefill}
+   \vspace{.7\baselineskip}
    \\
 %  &
 %  \textbf{Software: }  Microsoft Office (Word, Excel, Powerpoint), Photoshop, %  &  Illustrator, Lightroom, AutoCAD, Inventor, Visual Studio Code.
@@ -101,13 +156,16 @@
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%
    {\scshape Idiomas}
    &
-   \textbf{Español: }  Nativo.
-   \vspace{0.5\baselineskip}
+   \textbf{Español: }  Nativo. \hspace{3cm} \textbf{Ingles: }  Fluído.
+   %\vspace{0.7\baselineskip}
    \\
+   %&
+   %\textbf{Ingles: }  Fluído.
+   %\\
    &
-   \textbf{Ingles: }  Fluído.
-   \\
-   \vspace{1\baselineskip}
+   \vspace{.3\baselineskip}
+   {\noindent\hspace{-50mm}\hrulefill}
+   \vspace{.7\baselineskip}
    \\
    
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -116,21 +174,24 @@
    \textbf{NASA Space Apps Challenge 2019}  \hfill Morón, Bs.As.\vspace{0.015in} \\ 
    {\scshape Académicas} % ???????????
    & Nominación global del proyecto\hfill Octubre 2019\vspace{0.015in}
-   \vspace{0.5\baselineskip}
+   \vspace{0.7\baselineskip}
    \\
    & \textbf{Olimpiada Nacional ONIET N$^{\circ}$23}  \hfill Córdoba, Cba.\vspace{0.015in} \\ &
    4to puesto en la competencia grupal de Electrónica \hfill Octubre 2018\vspace{0.015in}
-   \\
-   \vspace{1\baselineskip}
+   \\ 
+   &
+   \vspace{.3\baselineskip}
+   {\noindent\hspace{-50mm}\hrulefill}
+   \vspace{.7\baselineskip}
    \\
    %%%%%%%%%%%%%%%%%%%%%%%%%%%%
    {\scshape Cursos}
    &
-   \textbf{Curso de Radioaficionados}  \hfill Morón, Bs.As.\vspace{0.015in} \\ 
+   \textbf{Radioaficionados}  \hfill Morón, Bs.As.\vspace{0.015in} \\ 
    & I.N.A.C. C.I.A.T.A. \hfill 2018\vspace{0.015in}
-   \vspace{0.5\baselineskip}
+   \vspace{0.7\baselineskip}
    \\
-   & \textbf{Curso introductorio a Sensores}  \hfill Morón, Bs.As.\vspace{0.015in} \\ &
+   & \textbf{Introducción a Sensores}  \hfill Morón, Bs.As.\vspace{0.015in} \\ &
    I.N.A.C. C.I.A.T.A. -- ifm electronics \hfill 2017\vspace{0.015in}
    \\
 
